@@ -1,18 +1,18 @@
 @echo off
 
-REM Створення структури каталогів
+REM Г‘ГІГўГ®Г°ГҐГ­Г­Гї Г±ГІГ°ГіГЄГІГіГ°ГЁ ГЄГ ГІГ Г«Г®ГЈВіГў
 mkdir "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line"
 mkdir "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\batch"
 mkdir "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Hidden folder"
 mkdir "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Not hidden folder"
 
-REM Зробити каталог "Скрытая папка" прихованим
+REM Г‡Г°Г®ГЎГЁГІГЁ ГЄГ ГІГ Г«Г®ГЈ "Г‘ГЄГ°Г»ГІГ Гї ГЇГ ГЇГЄГ " ГЇГ°ГЁГµГ®ГўГ Г­ГЁГ¬
 attrib +h "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Hidden folder"
 
-REM Вивести на екран допомогу з xcopy та зберегти у файл
+REM Г‚ГЁГўГҐГ±ГІГЁ Г­Г  ГҐГЄГ°Г Г­ Г¤Г®ГЇГ®Г¬Г®ГЈГі Г§ xcopy ГІГ  Г§ГЎГҐГ°ГҐГЈГІГЁ Гі ГґГ Г©Г«
 xcopy /? > "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Not hidden folder\copyhelp.txt"
 
-REM Скопіювати файл copyhelp.txt до каталога "Скрытая папка" та перейменувати його
-xcopy "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Not hidden folder\copyhelp.txt" "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Hidden folder\copied_copyhelp.txt" F
+REM Г‘ГЄГ®ГЇВіГѕГўГ ГІГЁ ГґГ Г©Г« copyhelp.txt Г¤Г® ГЄГ ГІГ Г«Г®ГЈГ  "Г‘ГЄГ°Г»ГІГ Гї ГЇГ ГЇГЄГ " ГІГ  ГЇГҐГ°ГҐГ©Г¬ГҐГ­ГіГўГ ГІГЁ Г©Г®ГЈГ®
+xcopy "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Not hidden folder\copyhelp.txt" "C:\Users\09823\Laboratories\PT-23-1\Konovalov Ivan Denisovich\Command line\Hidden folder\copied_copyhelp.txt" 
 
 pause
